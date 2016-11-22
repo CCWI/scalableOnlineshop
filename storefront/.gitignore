@@ -1,0 +1,8 @@
+node_modules
+report
+tmp
+build
+bower_components
+typings
+.DS_Store
+storefront/src/assets/styles/*.css

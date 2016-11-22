@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-th-large"></i> Artikelübersicht</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <h5>Wählen Sie einen Artikel aus, um Details zu erhalten!</h5>
+                    <br>
+                    <ul style="list-style-type: none; padding:0; margin:0;">
+                        <li *ngFor="let existingArticle of articles" class="panel panel-default col-xs-6 col-md-3">
+                            <a (click)="onSelect(existingArticle.id)" style="cursor: pointer">
+                                <div class="panel-body">
+                                    <img src="assets/images/ng2.jpg" alt="..." class="img-thumbnail">
+                                </div>
+                                <div class="panel-footer">{{ existingArticle.articleTitle }}</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="outer-outlet">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

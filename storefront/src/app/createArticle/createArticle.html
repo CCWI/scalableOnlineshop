@@ -1,0 +1,69 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-plus"></i> Artikel anlegen</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form (ngSubmit)="onCreateArticle(articleTitle, articleDescription, articleEAN, articlePrice, articleStock, shippmentReady, shippingDays, shippingMethod)">
+                    <h2>Stammdaten</h2>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            <input type="text" name="articleTitle" [(ngModel)]="articleTitle" placeholder="Titel des Artikels" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            <input type="text" name="articleDescription" [(ngModel)]="articleDescription" placeholder="Artikelbeschreibung" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            <input type="text" name="articleEAN" [(ngModel)]="articleEAN" placeholder="European Article Number" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            <input type="number" name="articlePrice" [(ngModel)]="articlePrice" placeholder="Preis" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            <input type="number" name="articleStock" [(ngModel)]="articleStock" placeholder="Artikelbestand" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <h2>Liefermöglichkeiten</h2>
+
+                    <div>
+                      <label><input type="checkbox" name="shippmentReady" [(ngModel)]="shippmentReady" class="big-checkbox"><span class="big_checkboxtext"><h4>Versandbereit</h4></span></label>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            <input type="number" name="shippingDays" [(ngModel)]="shippingDays" placeholder="Versanddauer (in Tagen)" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                            <input type="text" name="shippingMethod" [(ngModel)]="shippingMethod" placeholder="Lieferart" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <br><hr>
+                    <div class="">
+                        <button type="submit" class="btn btn-info pull-right btn-lg">Artikel inserieren <span class="fa fa-send"></span></button>
+                        <button type="reset" value="Reset" name="reset" class="btn btn-lg">Zurücksetzen <span class="fa fa-refresh"></span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-user-plus"></i> Profil</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <!--*ngFor='_user of _userModel'-->
+                <form (ngSubmit)="onSubmitProfileUpdate()">
+                    <h3>Nutzerprofil: {{_userModel.username}}</h3>
+                    <br/>
+                    <br/>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" name="firstname" [(ngModel)]="_userModel.firstname" placeholder="Vorname" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" name="lastname" [(ngModel)]="_userModel.lastname" placeholder="Nachname" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-location-arrow"></i></span>
+                            <input type="text" name="address" [(ngModel)]="_userModel.address" placeholder="Adresse" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-location-arrow"></i></span>
+                            <input type="text" name="postcode" [(ngModel)]="_userModel.postcode" placeholder="Postleitzahl" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-location-arrow"></i></span>
+                            <input type="text" name="city" [(ngModel)]="_userModel.city" placeholder="Stadt" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-location-arrow"></i></span>
+                            <input type="text" name="country" [(ngModel)]="_userModel.country" placeholder="Land" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn btn-info pull-right btn-group-lg">Profil updaten <span class="fa fa-send"></span></button>
+                        <button type="reset" value="Reset" name="reset" class="btn btn-group-lg">Zurücksetzen <span class="fa fa-refresh"></span></button>
+                    </div>
+                </form>
+                <br>
+                <hr>
+                <br>
+                <h3>Angebotene Zahlungsmöglichkeiten <h5>(für den Verkauf der Artikel)</h5></h3>
+                <br/>
+                <br/>
+                <p *ngIf="_savedPaymentMethods != true"><strong>Es wurden bisher keine Zahlungsmethoden gewählt!</strong></p>
+                <table>
+                    <tr *ngFor="let paymethod of _paymentModel" class="col-md-12">
+                        <form id="profilePayment" (ngSubmit)="onDeletePaymethod(paymethod.id)">
+                                <td class="col-md-10">
+                                    <h4 class="media-heading">{{paymethod.method}}</h4>
+                                </td>
+                                <td class="col-md-2">
+                                    <div style="display: inline-block; vertical-align: middle; float: none;">
+                                        <button type="submit" class="btn btn-danger pull-right btn-group-lg"><span class="fa fa-times fa-2x"></span></button>
+                                    </div>
+                                </td>
+                        </form>
+                    </tr>
+                </table>
+                <form (ngSubmit)="onSubmitNewPaymethod(paymentmethod)">
+                    <div class="form-group input-lg">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-money" aria-hidden="true"></i></span>
+                            <select name="paymentmethod" [(ngModel)]="paymentmethod" placeholder="Zahlungsmethode" class="form-control input-lg" required>
+                                <option value="Sofortüberweisung">Sofortüberweisung</option>
+                                <option value="Paypal"><i class="fa fa-paypal" aria-hidden="true"></i> Paypal</option>
+                                <option value="Nachnahme"><i class="fa fa-google-wallet" aria-hidden="true"></i> Nachnahme</option>
+                                <option value="Kreditkarte"><i class="fa fa-cc-visa" aria-hidden="true"></i> Kreditkarte</option>
+                                <option value="Google Wallet"><i class="fa fa-google-wallet" aria-hidden="true"></i> Google Wallet</option>
+                                <option value="Bitcoins"><i class="fa fa-btc" aria-hidden="true"></i> Bitcoins</option>
+                                <option value="Rechnung"><i class="fa fa-google-wallet" aria-hidden="true"></i> Rechnung</option>
+                            </select>
+                            <!--<input type="text" name="paymentmethod" [(ngModel)]="paymentmethod" placeholder="Zahlungsmethode" class="form-control input-lg" required>-->
+                        </div>
+                    </div>
+                    <div class="col-md-10 center-block">
+                        <button type="submit" class="btn btn-info pull-right btn-group-lg">Neue Zahlungsmethode hinzufügen...<span class="fa fa-send"></span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="stepwizard">
+    <div class="stepwizard-row">
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-primary btn-circle" [routerLink]="['../delivery']">1</button>
+            <p>Lieferung</p>
+
+       </div>
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-default btn-circle" disabled="disabled">2</button>
+            <p>Bezahlung</p>
+        </div>
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
+            <p>Bestätigung</p>
+        </div>
+    </div>
+</div>
+<br/>
+<hr>
+<br/>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-truck"></i> Lieferung</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+            <h3>Wählen Sie eine der verfügbaren Liefermöglichkeiten</h3>
+                <form (ngSubmit)="onRegisterSubmit(username, firstname, lastname, password, address, postcode, city, country)">
+                    <div class="form-group">
+                        <div class="funkyradio">
+                            <div class="funkyradio-success" *ngFor="let delivery of _delivery; let j = index">
+                                <input type="radio" name="radio{{j}}" id="{{j}}" />
+                                <label htmlFor="{{j}}">{{delivery.shippingMethod}}</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr><br>
+                    <div class="">
+                        <button type="button" class="btn btn-info pull-right btn-lg" (click)="goOn()">Weiter <span class="fa fa-arrow-right"></span></button>
+                        <button type="reset" value="Reset" name="reset" class="btn btn-lg" (click)="goBackToShoppingcart()"><span class="fa fa-arrow-left"></span>Zurück</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+<div class="stepwizard">
+    <div class="stepwizard-row">
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-success btn-circle" (click)="goBackToDelivery()">1</button>
+            <p>Lieferung</p>
+        </div>
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-primary btn-circle">2</button>
+            <p>Bezahlung</p>
+        </div>
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
+            <p>Bestätigung</p>
+        </div>
+    </div>
+</div>
+<br/>
+<hr>
+<br/>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-credit-card-alt"></i> Bezahlung</h3>
+    </div>
+    <div class="panel-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-sx-1 col-sm-12 col-md-10 col-md-offset-1">
+                    <table class="table table-hover" *ngFor="let paymentArray of paymentList; let i = index">
+                        <thead>
+                            <tr>
+                                <th>Produkt</th>
+                                <th>Verfügbare Zahlungsmethode wählen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="margin:25px;">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="assets/images/ng2.jpg" style="width: 100px; height: 72px; margin:15px;">
+                                    </a>
+                                    <div>
+                                      <h3>{{paymentArticleList[i].articleTitle}}</h3>
+                                    </div>
+                                </td>
+                                <td class="col-sx-6 col-md-6">
+
+                                    <div class="funkyradio">
+                                        <div class="funkyradio-success" *ngFor="let payment of paymentArray.paymentList; let j = index">
+                                            <input type="radio" name="radio{{i*3}}" id="{{i*3+j}}" />
+                                            <label htmlFor="{{i*3+j}}">{{payment.method}}</label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sx-1 col-sm-1 col-md-1" style="text-align: center">
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                        <div class="">
+                          <button type="reset" value="Reset" name="reset" class="btn btn-lg" (click)="goBackToDelivery()"><span class="fa fa-arrow-left"></span>Zurück</button>
+                          <button type="button" class="btn btn-info pull-right btn-lg" (click)="goOn()">Weiter <span class="fa fa-arrow-right"></span></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form (ngSubmit)="onCompletePayment()" #loginForm="ngForm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" name="username" [(ngModel)]="username" placeholder="Nutzername" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" name="firstname" [(ngModel)]="firstname" placeholder="Vorname" class="form-control input-lg" required>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn btn-info pull-right btn-lg" [routerLink]="['../confirmation']">Weiter... <span class="fa fa-arrow-right"></span></button>
+                        <button type="reset" value="Reset" name="reset" class="btn btn-lg" [routerLink]="['../delivery']"><span class="fa fa-arrow-left"></span> Zurück</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>-->
+</div>

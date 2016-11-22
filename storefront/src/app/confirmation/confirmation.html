@@ -1,0 +1,102 @@
+<div class="stepwizard">
+    <div class="stepwizard-row">
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-success btn-circle" [routerLink]="['../delivery']">1</button>
+            <p>Lieferung</p>
+        </div>
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-success btn-circle" [routerLink]="['../payment']">2</button>
+            <p>Bezahlung</p>
+        </div>
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-primary btn-circle" [routerLink]="['../confirmation']">3</button>
+            <p>Bestätigung</p>
+        </div>
+    </div>
+</div>
+<br/>
+<hr>
+<br/>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-th-list"></i> Bestellungsübersicht</h3>
+    </div>
+    <div class="panel-body">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail text-center">
+                      <div class="caption">
+                          <h3>Gesamtpreis</h3>
+                          <h1><span class="label label-primary">{{totalOfCart}} €</span></h1>
+                          <br>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="thumbnail text-center">
+                      <div class="caption">
+                          <h3>Nettopreis</h3>
+                          <h1><span class="label label-primary">{{totalOfCartNetto}} €</span></h1>
+                          <br>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-5 col-sm-8">
+                  <div class="thumbnail text-center">
+                      <div class="caption">
+                        <form>
+                          <div>
+                            <label><input type="checkbox" class="big-checkbox">
+                              <span class="big_checkboxtext"><h4> Ich habe die <a [routerLink]="['../../agb']">AGBs</a> gelesen.</h4></span>
+                            </label>
+                          </div>
+                          <button type="button" class="btn btn-success btn-lg" (click)="confirm()">
+                              Kauf abschließen <span class="fa fa-caret-right"></span>
+                          </button>
+                        </form>
+                      </div>
+                  </div>
+              </div>
+
+
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sx-1 col-sm-12 col-md-10 col-md-offset-1">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Produkt</th>
+                                <th>Anzahl</th>
+                                <th class="text-center">Preis</th>
+                                <th class="text-center">Gesamt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let article of articles">
+                                <td class="col-sx-6 col-md-6">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="assets/images/ng2.jpg" style="width: 100px; height: 72px; margin:15px;">
+                                    </a>
+                                    <div class="media-body">
+                                        <h3 class="media-heading" *ngIf="article.articleTitle !== undefined">{{article.articleTitle}}</h3>
+                                        <h5 class="media-heading" *ngIf="article.supplierName !== undefined"> von Verkäufer: {{article.supplierName}}</h5>
+                                        <span>Lieferung: </span><span class="text-default"><strong>3 Tage</strong></span>
+                                    </div>
+                                </td>
+                                <td class="col-sx-1 col-sm-1 col-md-1" style="text-align: center"><strong>{{article.quantity}}</strong></td>
+                                <td class="col-sx-1 col-sm-1 col-md-1 text-center" *ngIf="article.articlePrice > 0"><strong>{{article.articlePrice}} €</strong></td>
+                                <td class="col-sx-1 col-sm-1 col-md-1 text-center" *ngIf="article.articlePrice > 0"><strong>{{article.articlePrice*article.quantity}} €</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

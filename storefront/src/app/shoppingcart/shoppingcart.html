@@ -1,0 +1,87 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-shopping-cart"></i> Shoppingcart</h3>
+    </div>
+    <div class="panel-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-sx-1 col-sm-12 col-md-10 col-md-offset-1">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Produkt</th>
+                                <th>Anzahl</th>
+                                <th class="text-center">Preis</th>
+                                <th class="text-center">Gesamt</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let article of articles">
+                                <td class="col-sx-6 col-md-6">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="assets/images/ng2.jpg" style="width: 100px; height: 72px; margin:15px;">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a *ngIf="article.articleTitle !== undefined">{{article.articleTitle}}</a></h4>
+                                        <h5 class="media-heading" *ngIf="article.supplierName !== undefined"> von <a>Verkäufer: {{article.supplierName}}</a></h5>
+                                        <span>Status: </span><span class="text-success" *ngIf="article.articleStock > 0"><strong>Auf Lager</strong></span>
+                                        <span class="text-success" *ngIf="article.articleStock == 0"><strong>Nicht auf Lager</strong></span>
+                                    </div>
+                                </td>
+                                <td class="col-sx-1 col-sm-1 col-md-1" style="text-align: center">
+                                    <input type="number" [(ngModel)]="article.quantity" (change)="recalc()" value="3" min="1" required>
+                                </td>
+                                
+                                <td class="col-sx-1 col-sm-1 col-md-1 text-center" *ngIf="article.articlePrice > 0"><strong>{{article.articlePrice}} €</strong></td>
+                                <td class="col-sx-1 col-sm-1 col-md-1 text-center" *ngIf="article.articlePrice > 0"><strong>{{article.articlePrice*article.quantity}} €</strong></td>
+                                <td class="col-sx-0 col-sm-1 col-md-1">
+                                    <div class="row" style="margin:25px;">
+                                        <div style="display: inline-block; vertical-align: middle; float: none;">
+                                            <form id="cartEntry" (ngSubmit)="onDeleteEntry(article.id)">
+                                              <button type="submit" class="btn btn-danger pull-right btn-group-lg"><span class="fa fa-times fa-2x"></span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>   </td>
+                                <td>   </td>
+                                <td>   </td>
+                                <td>
+                                    <h3>Total</h3></td>
+                                <td class="text-right">
+                                    <h3><strong>{{totalOfCart}} €</strong></h3></td>
+                            </tr>
+                            <tr>
+                                <td>   </td>
+                                <td>   </td>
+                                <td>   </td>
+                                <td>
+                                    <h5>Netto</h5></td>
+                                <td class="text-right">
+                                    <h5><strong>{{totalOfCartNetto}} €</strong></h5></td>
+                            </tr>
+                            <tr>
+                                <td>   </td>
+                                <td>   </td>
+                                <td>   </td>
+                                <td>
+                                    <button type="button" class="btn btn-default btn-lg" (click)="goOnShopping()">
+                                        <span class="fa fa-shopping-cart"></span> Weiter einkaufen
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-success btn-lg" (click)="goToCheckout()">
+                                        Zur Kasse <span class="fa fa-caret-right"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+FROM java:8
+ADD article.jar /opt/projectName/
+EXPOSE 8083
+WORKDIR /opt/projectName/
+CMD ["java", "-Xms512m", "-Xmx1g", "-jar", "article.jar"]

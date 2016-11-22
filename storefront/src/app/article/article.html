@@ -1,0 +1,77 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+    <h2 class="panel-title"><i class="fa fa-bars"></i> Articles</h2>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button type="reset" value="Reset" name="reset" class="btn btn-lg" (click)="goBackToArticleInventory()"><span class="fa fa-arrow-left"></span>Zurück zur Übersicht</button>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img src="assets/images/ng2.jpg" alt="..." class="img-thumbnail"> <!-- "img-responsive img-rounded" -->
+                      </div>
+                      <div class="col-md-6">
+                        <h3 *ngIf="selectedArticle">{{selectedArticle.articleTitle}}</h3>
+                        <br>
+                        <div *ngIf="selectedArticle">Preis {{selectedArticle.articlePrice}} €</div>
+                        <br>
+                        <div *ngIf="selectedArticle">Es sind nur noch {{selectedArticle.articleStock}} Stück übrig.</div>
+                        <br>
+
+                        <div class="alert alert-danger" role="alert" *ngIf="_quantityToHigh === true">
+                          <p>Die ausgewählte Stückzahl des Artikels ist leider nicht verfügbar!</p>
+                        </div>
+
+                        <!-- <form (ngSubmit)="onShoppingcartSubmit(quantity)" #loginForm="ngForm">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input class="form-control input-lg" type="number" name="quantity" [(ngModel)]="quantity" min="1" value="1" placeholder="Stück" required>
+                            </div>
+                            <div class="col-md-6">
+                              <button class="btn btn-success btn-lg" type="submit">In den Warenkorb</button>
+                            </div>
+                          </div>
+                        </form> -->
+                      </div>
+                    </div>
+                    <br>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Artikelbeschreibung</h3>
+                      </div>
+                      <div class="panel-body">
+                        <div *ngIf="selectedArticle">{{selectedArticle.articleDescription}}</div>
+                        <br>
+                        EAN: <div *ngIf="selectedArticle">{{selectedArticle.articleEAN}}</div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Ähnliche Artikel</h3>
+                      </div>
+                      <div class="panel-body">
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Bewertungen</h3>
+                      </div>
+                      <div class="panel-body">
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="outer-outlet">
+        <router-outlet></router-outlet>
+    </div>
+</div>

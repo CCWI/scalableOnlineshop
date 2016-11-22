@@ -1,0 +1,5 @@
+language: java
+jdk:
+    - oraclejdk8
+sudo: false
+script: cd article && mvn clean install && cd ../authentication && mvn clean install && cd ../payment && mvn clean install && cd ../shippment && mvn clean install && cd ../shoppingcart && mvn clean install && cd ../user && mvn clean install

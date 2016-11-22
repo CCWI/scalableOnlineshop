@@ -1,0 +1,172 @@
+<as-header></as-header>
+
+<nav id="headernavbar" class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!--<li *ngFor="let route of routes"><a [routerLink]="[route.path]">{{route.name}}</a></li>-->
+                <li><a [routerLink]="['/']">Home</a></li>
+                <li><a [routerLink]="['/article']">Artikel</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-center" style="margin-top: 5px;">
+                <form class="navbar-form navbar-left" role="search" (ngSubmit)="searchArticle(enter, distance)">
+                    <div class="form-group">
+                        <div id="custom-search-input">
+                            <!-- <div class="input-group col-md-12">
+                                <span class="input-group-btn">
+                                  <input type="text" name="enter" [(ngModel)]="enter" class="form-control" placeholder="Artikel suchen" />
+                                </span>
+                                <span class="input-group-btn verticalLine">
+                                  <input type="text" name="distance" [(ngModel)]="distance" class="form-control" placeholder="Umkreis" style="width:100px;" />
+                                </span>
+                                <span class="input-group-btn">
+                                  <button class="btn btn-info btn-lg" type="submit">
+                                    <i class="fa fa-search"></i>
+                                  </button>
+                                </span>
+                            </div> -->
+                        </div>
+                    </div>
+                </form>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li style="margin-top: -6px;">
+                  <a [routerLink]="['/shoppingcart']"><i class="fa fa-shopping-cart fa-2x"><span class="badge">X</span></i></a>
+                </li>
+                <li style="margin-top: -6px;">
+                    <a href="#helpFAQ" role="button" data-toggle="modal"><i class="fa fa-question-circle fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aktionsmenü<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li style="height:30px; margin-top:15px;"><a [routerLink]="['/profile']"><i class="fa fa-user" aria-hidden="true"></i> Profil</a></li>
+                        <li style="height:30px; margin-top:15px;"><a [routerLink]="['/insertArticle']"><i class="fa fa-paper-plane" aria-hidden="true"></i> Inserat erstellen</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li style="height:30px; margin-top:15px;"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Einstellungen</a></li>
+                    </ul>
+                </li>
+                <li><a (click)="redirectUser()" style="cursor: pointer;">{{_loginLogoutButtonText}}</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- <as-login></as-login> -->
+
+<br/>
+<div class="container" style="margin-top: 10px;">
+	<router-outlet></router-outlet>
+</div>
+
+<br><br><br>
+<div class="row">
+	<div class="col-lg-4 col-md-3 col-xs-1"></div>
+<div class="col-lg-4 col-md-6 col-xs-10">
+	<span class="label label-danger text-center">Dieser Client basiert auf einem Prototypen und ist noch nicht für einen produktiven Einsatz geeignet!!</span>
+</div>
+<div class="col-lg-4 col-md-3 col-xs-1"></div>
+</div>
+<br><br><br><br><br><br><br>
+
+<!-- <modal #myModal>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-user" aria-hidden="true"></i> Login</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="well">
+										<form (ngSubmit)="onLoginSubmit(username, password)" #loginForm="ngForm">
+                      	<div class="form-group">
+                            <label for="username" class="control-label">Username</label>
+                            <input required type="text" [(ngModel)]="username" class="form-control" id="username" name="username" value="" title="Bitte Nutzername eingeben" placeholder="name">
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input required type="password" [(ngModel)]="password" class="form-control" id="password" name="password" value="" title="Bitte Passwort eingeben">
+                            <span class="help-block"></span>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block">Login</button>
+                        <a href="/forgot/" class="btn btn-default btn-block">Passwort vergessen</a>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <p class="lead">Jetzt <span class="text-success">KOSTENLOS</span> Registrieren</p>
+                <ul class="list-unstyled" style="line-height: 2">
+                    <li><span class="fa fa-check text-success"></span> Schnelle Kaufdurchführung</li>
+                    <li><span class="fa fa-check text-success"></span> Speichern des Warenkorbs</li>
+                    <li><span class="fa fa-check text-success"></span> Verkaufe Produkte ohne Limit</li>
+                    <li><span class="fa fa-check text-success"></span> Willkommensgeschenk <small>(nur neue Kunden)</small></li>
+              	</ul>
+                <p><a [routerLink]="['/register']" (click)="modal.close()" class="btn btn-info btn-block">Register</a></p>
+            </div>
+        </div>
+    </div>
+</modal> -->
+
+<div id="helpFAQ" class="modal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color:#fff"><i class="fa fa-user" aria-hidden="true"></i> Support</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="well">
+										<h5>Hilfe</h5>
+										<p class="lead">Bitte <span class="text-success">LESEN</span> Sie die Frequently Asked Questions aufmerksam.</p>
+										<ul class="list-unstyled" style="line-height: 2">
+												<li><span class="fa fa-check text-success"></span> Sollten Sie noch immer Probleme haben, nutzen Sie bitte unser Supportforum</li>
+												<li><span class="fa fa-check text-success"></span> Oder nehmen Sie einfach direkt mit uns Kontakt auf:</li>
+										</ul>
+										<button type="button" class="btn btn-success" [routerLink]="['/contact']" data-dismiss="modal">Kontakt</button>
+                </div>
+            </div>
+						<div class="col-xs-6">
+                <div class="well">
+									<h5>FAQs</h5>
+										<ol type="1" style="line-height: 2">
+												<li>Wie?</li>
+												<li>Wo?</li>
+												<li>Was?</li>
+												<li>Wann?</li>
+										</ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Static bottom navbar -->
+<div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse bottom-collapse">
+      <ul class="nav navbar-nav">
+        <li><a [routerLink]="['about']">Über uns</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['agb']">AGBs</a></li>
+        <li><a [routerLink]="['contact']">Kontakt</a></li>
+        <li><a [routerLink]="['impressum']">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

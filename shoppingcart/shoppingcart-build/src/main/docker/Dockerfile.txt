@@ -1,0 +1,5 @@
+FROM java:8
+ADD shoppingcart.jar /opt/projectName/
+EXPOSE 8084
+WORKDIR /opt/projectName/
+CMD ["java", "-Xms512m", "-Xmx1g", "-jar", "shoppingcart.jar"]

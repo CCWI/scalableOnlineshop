@@ -1,0 +1,5 @@
+FROM java:8
+ADD authentication.jar /opt/projectName/
+EXPOSE 8088
+WORKDIR /opt/projectName/
+CMD ["java", "-Xms512m", "-Xmx1g", "-jar", "authentication.jar"]
