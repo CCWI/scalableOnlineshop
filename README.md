@@ -6,7 +6,6 @@
        src="https://scan.coverity.com/projects/9743/badge.svg"/>
 </a>
 [![Build Status](https://travis-ci.org/CodeMax/Scalable-Shopsystem.svg?branch=master)](https://travis-ci.org/CodeMax/Scalable-Shopsystem)
-[![devDependencies Status](https://david-dm.org/bower/bower/dev-status.svg)](https://david-dm.org/bower/bower?type=dev)
 
 ## Problemstellung
 Im Zuge der Forderung nach Skalierbarkeit für Webanwendungen wie dem Onlineshop, gilt meist die individuelle Analyse, welche Architekturentscheidungen und verfügbaren Mittel den Anforderungen am geeignetsten entgegnen. Außerdem gilt hierbei, dass Skalierbarkeit die Komplexität des Systems in den meisten Fällen erhöht und Probleme entstehen können, die mit einer anderen Architektur ggf. nicht einher gehen. Die Kenntnis über entsprechende Probleme und mögliche Fallstricke fehlen häuﬁg noch in den Unternehmen, um eine entsprechende Architektur zu konzipieren bzw. diese auch umzusetzen. Es gilt daher mögliche Fallstricke aufzudecken und entsprechende Maßnahmen zu ergreifen.
