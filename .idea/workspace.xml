@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d10e31b-575a-41f5-856f-8a677e331e01" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/storefront/package.json" afterPath="$PROJECT_DIR$/storefront/package.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/storefront/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storefront/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="typings.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storefront/typings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tslint.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storefront/tslint.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storefront/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>type</find>
+      <find>query</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/storefront/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/storefront/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="991" />
+    <option name="height" value="867" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="scalableOnlineshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scalableOnlineshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scalableOnlineshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scalableOnlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="storefront" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d10e31b-575a-41f5-856f-8a677e331e01" name="Default" comment="" />
+      <created>1516830626624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516830626624</updated>
+      <workItem from="1516830629297" duration="1420000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1420000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/storefront/src/app/articleInventory/articleInventory.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/articleInventory/articleInventory.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/createArticle/createArticle.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/createArticle/createArticle.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/shoppingcart/shoppingcart.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/shoppingcart/shoppingcart.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/shoppingcart/shoppingcart.service.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/shoppingcart/shoppingcart.service.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/confirmation/confirmation.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/confirmation/confirmation.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/sendOrder/sendOrder.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/sendOrder/sendOrder.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/impressum/impressum.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/impressum/impressum.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/register/register.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/register/register.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/delivery/delivery.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/delivery/delivery.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/profile/profile.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/profile/profile.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/payment/payment.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/payment/payment.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/payment/payment.service.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/payment/payment.service.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/contact/contact.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/contact/contact.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/article/article.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/article/article.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/shared/constant/main.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/shared/constant/main.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/logout/logout.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/logout/logout.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/header/header.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/header/header.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/login/login.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/login/login.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/about/about.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/about/about.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/home/home.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/home/home.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/agb/agb.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/agb/agb.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/main.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/main.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/token.service.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/token.service.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/app.routes.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/app.routes.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/login.service.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/login.service.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/app.module.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/app.component.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/user.service.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/user.service.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/navbar.service.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/navbar.service.js.map" />
+        <option value="$PROJECT_DIR$/storefront/src/app/backendcall.service.js" />
+        <option value="$PROJECT_DIR$/storefront/src/app/backendcall.service.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storefront/typings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storefront/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storefront/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storefront/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storefront/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
